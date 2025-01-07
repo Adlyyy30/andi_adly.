@@ -1,0 +1,65 @@
+<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - dlyy.SnL</title>
+    <link rel="stylesheet" href="transaksi.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="dly.snl.jpeg" alt="Logo dlyy.SnL" class="logo">
+            <h1 class="site-title">dlyy.SnL</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a id="auth-link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Form Transaksi</h1>
+        <p class="intro-text">Lakukan transaksi simpan atau pinjam dengan mudah menggunakan formulir di bawah ini.</p>
+        <div class="transaction-container">
+            <div class="transaction-card">
+                <h2>💾 Simpan</h2>
+                <p>Simpan data atau barang Anda dengan aman di sistem kami.</p>
+            </div>
+            <div class="transaction-card">
+                <h2>🔄 Pinjam</h2>
+                <p>Ajukan peminjaman barang atau data dengan proses yang cepat dan mudah.</p>
+            </div>
+        </div>
+        <form action="#" method="POST" class="form-transaksi">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            
+            <label for="jenis">Jenis Transaksi:</label>
+            <select id="jenis" name="jenis" required>
+                <option value="" disabled selected>Pilih jenis transaksi</option>
+                <option value="simpan">Simpan</option>
+                <option value="pinjam">Pinjam</option>
+            </select>
+            
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea id="deskripsi" name="deskripsi" placeholder="Masukkan deskripsi" required></textarea>
+            
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah" required>
+            
+            <button type="submit" class="cta-button">Kirim</button>
+        </form>
+        <p><a href="riwayat.html"> lihat daftar transaksi anda disini </a></p>
+        <script src="transaksi.js"></script>
+        <script src="logout.js"></script> 
+    </main>
+    <footer>
+        <p>&copy; 2024 dlyy.SnL - Aplikasi Simpan Pinjam</p>
+    </footer>
+</body>
+</html>
